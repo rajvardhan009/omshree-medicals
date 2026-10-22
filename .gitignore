@@ -1,0 +1,25 @@
+@'
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Build files
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+
+# Local database and private data
+*.db
+*.sqlite
+*.sqlite3
+backups/
+patient-data/
+'@ | Set-Content -Encoding utf8 .gitignore
